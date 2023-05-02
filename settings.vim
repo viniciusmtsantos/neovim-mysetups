@@ -1,6 +1,7 @@
 " set leader key
 let g:mapleader = "\<Space>"
 
+syntax on
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
@@ -47,6 +48,10 @@ set encoding=utf-8
 set splitright
 set splitbelow
 set autoread
+" Testando
+map q :quit<CR>
+map <C-s> :write<CR>
+
 filetype on
 filetype indent on
 filetype plugin on
